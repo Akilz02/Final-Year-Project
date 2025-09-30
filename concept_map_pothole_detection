@@ -1,0 +1,40 @@
+// Concept Map - Real-Time Pothole Detection System
+digraph {
+	RT [label="Real-Time Pothole Detection System" fillcolor=lightgrey shape=box style=filled]
+	PD [label="Pothole Problem Domain" shape=box]
+	DT [label="Detection Technology" shape=box]
+	PM [label="Position Mapping Logic" shape=box]
+	FM [label="Feedback Mechanism" shape=box]
+	US [label="Users & Stakeholders" shape=box]
+	PD -> RT
+	DT -> RT
+	PM -> RT
+	FM -> RT
+	US -> RT
+	PD1 [label="Road Safety"]
+	PD2 [label="Vehicle Damage"]
+	PD3 [label="Unmaintained Roads"]
+	PD -> PD1
+	PD -> PD2
+	PD -> PD3
+	DT1 [label="Camera Input"]
+	DT2 [label="YOLOv11-L Model"]
+	DT3 [label="OpenCV + Python"]
+	DT -> DT1
+	DT -> DT2
+	DT -> DT3
+	PM1 [label="Left, Center, Right"]
+	PM2 [label="Position Mapping Algorithm"]
+	PM -> PM1
+	PM -> PM2
+	FM1 [label="ESP32 Microcontroller"]
+	FM2 [label="LED Strip (WS2812B)"]
+	FM3 [label="Serial Communication (USB/UART)"]
+	FM -> FM1
+	FM -> FM2
+	FM -> FM3
+	US1 [label="Driver (Visual Feedback)"]
+	US2 [label="Developer (Implementation)"]
+	US -> US1
+	US -> US2
+}
